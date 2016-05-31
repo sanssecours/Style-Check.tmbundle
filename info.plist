@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>fnaffrpbhef@s-z.sz</string>
+	<key>contactName</key>
+	<string>René Schwaiger</string>
+	<key>description</key>
+	<string>This bundle provides basic support for &lt;a href="https://www.cs.umd.edu/~nspring/software/style-check-readme.html"&gt;Style Check&lt;/a&gt;. Style Check is a tool that searches LaTeX formatted files for forbidden phrases. </string>
+	<key>name</key>
+	<string>Style Check</string>
+	<key>uuid</key>
+	<string>881F70B2-01A6-4F2C-8E1A-E6AB6B9EEA68</string>
+</dict>
+</plist>

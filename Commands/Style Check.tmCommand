@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require ENV['TM_SUPPORT_PATH'] + '/lib/tm/executor'
+require ENV['TM_SUPPORT_PATH'] + '/lib/tm/save_current_document'
+
+TextMate.save_current_document
+TextMate::Executor.make_project_master_current_document
+
+TextMate::Executor.run(['style-check.rb', '-v'], ENV['TM_FILEPATH'],
+                       version_replace: '0.14', verb: 'Style Check')</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@C</string>
+	<key>name</key>
+	<string>Check Style</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+  <key>requiredCommands</key>
+  	<array>
+  		<dict>
+  			<key>command</key>
+  			<string>style-check.rb</string>
+  			<key>locations</key>
+  			<array>
+  				<string>/usr/local/bin/</string>
+  			</array>
+  		</dict>
+  	</array>
+	<key>scope</key>
+	<string>text.tex.latex</string>
+	<key>uuid</key>
+	<string>DF3B448A-6D5F-4C9F-80B6-A7AB03716A13</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
