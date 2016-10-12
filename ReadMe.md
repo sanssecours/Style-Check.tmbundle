@@ -7,7 +7,7 @@ This [TextMate][] bundle provides basic support for [Style Check](https://www.cs
 # Installation
 
 ```bash
-mkdir -p "$HOME/Library/Application Support/Avian/Bundles"
-cd "$HOME/Library/Application Support/Avian/Bundles"
+mkdir -p "$HOME/Library/Application Support/TextMate/Bundles"
+cd "$HOME/Library/Application Support/TextMate/Bundles"
 git clone https://github.com/sanssecours/Style-Check.tmbundle
 ```
